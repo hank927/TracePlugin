@@ -1,0 +1,3 @@
+include ':MTracePlugin'
+include ':app'
+rootProject.name = "TracePlugin"
