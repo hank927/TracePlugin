@@ -2,6 +2,9 @@ package com.hank.trace;
 
 import org.objectweb.asm.Opcodes;
 
+/**
+ *
+ */
 public class MethodTrace {
 
     private int id = 0;

@@ -6,6 +6,9 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
 /**
+ * author : Administrator
+ * date   : 2020/5/15
+ * desc   : 文件访问类
  */
 public class TraceClassVisitor extends ClassVisitor {
     private String className;

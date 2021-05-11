@@ -5,6 +5,9 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.commons.AdviceAdapter;
 /**
+ * author : Administrator
+ * date   : 2020/5/15
+ * desc   : 方法访问类
  */
 public class TraceMethodVisitor extends AdviceAdapter {
     private String methodName;

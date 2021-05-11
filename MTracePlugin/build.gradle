@@ -9,12 +9,12 @@ plugins {
     id 'groovy'
     id "java"
     id "java-gradle-plugin"
-    id "com.gradle.plugin-publish" version "0.12.0"
+    id "com.gradle.plugin-publish" version "0.14.0"
 }
 
 apply plugin: 'com.github.dcendents.android-maven'
 
-group 'com.hank.trace'
+group 'com.github.hank927'
 version '1.0.0'
 sourceCompatibility = 1.8
 
@@ -50,4 +50,30 @@ task sourcesJar(type: Jar) {
 
 artifacts {
     archives javadocJar, sourcesJar
+}
+
+// Use java-gradle-plugin to generate plugin descriptors and specify plugin ids
+gradlePlugin {
+    plugins {
+        greetingsPlugin {
+            id = 'com.github.traceplugin'
+            implementationClass = 'com.hank.trace.MTracePlugin'
+        }
+    }
+}
+
+// The configuration example below shows the minimum required properties
+// configured to publish your plugin to the plugin portal
+pluginBundle {
+    website = 'https://github.com/hank927/TracePlugin'
+    vcsUrl = 'https://github.com/hank927/TracePlugin'
+    description = 'a library for android apps to trace the method cost！'
+    tags = ['method', 'trace']
+
+    plugins {
+        greetingsPlugin {
+            // id is captured from java-gradle-plugin configuration
+            displayName = 'method trace gradle plugin'
+        }
+    }
 }
