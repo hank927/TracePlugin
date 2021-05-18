@@ -15,7 +15,7 @@ plugins {
 apply plugin: 'com.github.dcendents.android-maven'
 
 group 'com.github.hank927'
-version '1.0.0'
+version '1.0.1'
 sourceCompatibility = 1.8
 
 repositories {
@@ -56,7 +56,7 @@ artifacts {
 gradlePlugin {
     plugins {
         greetingsPlugin {
-            id = 'com.github.traceplugin'
+            id = 'com.github.hank927.traceplugin'
             implementationClass = 'com.hank.trace.MTracePlugin'
         }
     }
