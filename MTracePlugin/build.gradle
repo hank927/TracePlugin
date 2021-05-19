@@ -76,4 +76,10 @@ pluginBundle {
             displayName = 'method trace gradle plugin'
         }
     }
+
+    mavenCoordinates {
+        groupId = 'com.github.hank927'
+        artifactId = 'MTracePlugin'
+        version = '1.0.1'
+    }
 }
