@@ -15,7 +15,7 @@ plugins {
 apply plugin: 'com.github.dcendents.android-maven'
 
 group 'com.github.hank927'
-version '1.0.1'
+version '1.0.3'
 sourceCompatibility = 1.8
 
 repositories {
@@ -67,7 +67,7 @@ gradlePlugin {
 pluginBundle {
     website = 'https://github.com/hank927/TracePlugin'
     vcsUrl = 'https://github.com/hank927/TracePlugin'
-    description = 'a library for android apps to trace the method cost！'
+    description = 'a library for android apps to trace the method cost'
     tags = ['method', 'trace']
 
     plugins {
@@ -79,7 +79,7 @@ pluginBundle {
 
     mavenCoordinates {
         groupId = 'com.github.hank927'
-        artifactId = 'MTracePlugin'
-        version = '1.0.1'
+        artifactId = 'traceplugin'
+        version = '1.0.3'
     }
 }
